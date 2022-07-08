@@ -40,10 +40,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-.wrapper-input {
-
+/* .wrapper-input {
   
-}
+} */
 .input-text {
     margin: 85px 40px 85px 40px;
     width: 300px;
