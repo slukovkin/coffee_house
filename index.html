@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,24 +18,67 @@
             </div>
         </div>
         <div class="wrapper">
-            <section>             
-                <div class="wrapper-form">
-                    <div class="wrapper-input">
-                        <input type="text">
-                        <input type="text">
+                <section>             
+                    <div class="wrapper-form">
+                        <div class="wrapper-input">
+                            <input id="lastName" type="text" class="input-text" placeholder="Введите Фамилию" value="" onkeypress="noString(event)">
+                            <input id="userName" type="text" class="input-text" placeholder="Введите Имя" value="" onkeypress="noString(event)">
+                        </div>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="body-row">
+                                        <input type="checkbox" name="prod" id="product1" value="80" class="body-row-col"><span class="row-col-text">Эспресо 80р.</span>
+                                        <span class="row-col-val" name="count">0</span>
+                                </div>
+                                <div class="body-row">
+                                        <input type="checkbox" name="prod" id="product2" value="80" class="body-row-col"><span class="row-col-text">Шоколадный кекс 80р.</span>
+                                        <span class="row-col-val" name="count">0</span>
+                                </div>
+                            </div>
+                            <div class="row1">
+                                <div class="body-row">
+                                        <input type="checkbox" name="prod" id="product3" value="110" class="body-row-col"><span class="row-col-text">Латте 110р.</span>
+                                        <span class="row-col-val" name="count" >0</span>
+                                </div>
+                                <div class="body-row">
+                                        <input type="checkbox" name="prod" id="product4" value="90" class="body-row-col"><span class="row-col-text">Черничный кекс 90р.</span>
+                                        <span class="row-col-val" name="count">0</span>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div class="body-row">
+                                        <input type="checkbox" name="prod" id="product5" value="120" class="body-row-col"><span class="row-col-text">Капучино 120р.</span>
+                                        <span class="row-col-val" name="count">0</span>
+                                </div>
+                                <div class="body-row">
+                                        <input type="checkbox" name="prod" id="product6" value="100" class="body-row-col"><span class="row-col-text">Яблочный торт 100р.</span>
+                                        <span class="row-col-val" name="count">0</span>
+                                </div>
+                            </div>
+                            <div class="row3">
+                                <div class="body-row">
+                                        <input type="checkbox" name="prod" id="product7" value="90" class="body-row-col"><span class="row-col-text">Американо 90р.</span>
+                                        <span class="row-col-val" name="count">0</span>
+                                </div>
+                                <div class="body-row">
+                                        <input type="checkbox" name="prod" id="product8" value="90" class="body-row-col"><span class="row-col-text">Чизкейк 90р.</span>
+                                        <span class="row-col-val" name="count">0</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="form-result">
+                            <span class="result">Итого:</span>
+                        </div>
+                        <div class="form-button">
+                            <button id="btn">
+                                <span class="button-text">Оформить заказ</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="form-body">
-
-                    </div>
-                    <div class="form-result">
-
-                    </div>
-                    <div class="form-button">
-
-                    </div>
-                </div>
-            </section>
+                </section>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
