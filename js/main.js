@@ -39,13 +39,15 @@ userName.addEventListener('blur', function(){
 
 outSum = document.querySelector(".result"); //получаем элемент с классом result
 checkButtons = document.querySelectorAll('[name="prod"]'); //получаем список всех checkbox элементов
+checkCount = document.querySelectorAll('[name="counter"]')
 let selectedPriceValues = []; //массив для хранения выбранных checkbox
 /* let selectCheckProd = []; массив для хранения цены выбранных checkbox */
+console.log(checkCount);
 
 checkButtons.forEach(element => {                   //для каждого элемента из списка элементов checkbox
     element.addEventListener("change", function(){  //при изменении элемента
         if(element.checked){                        //если checkbox-кнопка выбрана
-            selectedPriceValues.push(element.value);   //добавляем значение в массив выбранных
+            selectedPriceValues.push(element.value); //добавляем значение в массив выбранных
         } else {                                         //иначе удаляем из массива выбранных
             selectedPriceValues.splice(selectedPriceValues.indexOf(element.value),1)
         }
